@@ -1,0 +1,62 @@
+@font-face {
+    font-family: Funky;
+    src: url(./font/pricedown\ bl.otf);
+}
+@font-face {
+    font-family: Poke;
+    src: url(./font/Pokemon\ Solid.ttf);
+}
+*{
+    font-family:'Funky', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+:root{
+    font-size: 10px;
+    --c1: SlateBlue;
+    --c2: gray;
+    --c3: DarkSlateBlue;
+}
+body{
+    background-color: var(--c1);
+    margin: 0;
+}
+.icon{
+    height: 40px;
+    margin: 0px 10px 0px 10px;
+    /* top right bottom left */
+}
+#navbar{
+    background-color: var(--c2);
+    width: auto;
+    position: sticky;
+    top: 0px;
+    padding: 5px 10px 5px 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#funnybar{
+    background-color: var(--c3);
+    width: 100%;
+    position: sticky;
+    top: 0px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;  
+}
+.button-container a{
+    text-decoration: none;
+}
+.buttons{
+    color:red;
+    border: 2px red solid
+}
+button{
+    color: blue !important;
+}
+.content{
+    padding: 0 10px 0 10px;
+}

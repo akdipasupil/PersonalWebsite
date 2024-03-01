@@ -1,0 +1,17 @@
+p{
+    color: blue;
+}
+
+img {
+    width:auto;
+    height:300px;
+}
+div{
+    height:200px;
+}
+.greendiv{
+    color:green;
+}
+html body .greendiv p{
+    color: red;
+}
