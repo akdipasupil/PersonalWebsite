@@ -1,8 +1,13 @@
+@font-face {
+    font-family:Pokemon;
+    src: url(../font/Pokemon\ Classic.ttf);
+}
 :root{
     --primary: #000;
     --secondary: #FFF;
 
-    color: var(--secondary)
+    color: var(--secondary);
+    font-family:'Pokemon', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 *{
     color:var(--secondary)
@@ -10,6 +15,18 @@
 body{
     background-color:var(--primary);
 }
+
+/* generic classes */
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* specific classes */
 .page-num{
     position: fixed;
     bottom: 0px;
@@ -20,26 +37,24 @@ body{
     margin:5px;
 }
 .burger-button{
+    background:none;
+    border:0;
     width: 40px;
     height: 40px;
     margin: 0px;
     padding: 0px;
 }
-.burger-icon{
+#navbar .burger-button img{
     width: 36px;
     height: 36px;
 }
-#navbar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+#navbar .burger-button:hover{
+    cursor: pointer
 }
+
+/* #navbar{
+} */
 #navbar .left-nav-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     width:40%;
     font-size: 12px;
     color:red;
@@ -47,4 +62,17 @@ body{
 #navbar .left-nav-container img{
     height: 40px;
     margin: 0px 10px 0px 10px;
+}
+.arrow-button{
+    background:none;
+    border:none;
+}
+.arrow-button:hover{
+    cursor: pointer;
+}
+/* .arrow-button:hover img{
+} */
+.arrow-button img{
+    width: 40px;
+    height: 30px;
 }

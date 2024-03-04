@@ -39,7 +39,7 @@ body{
 #funnybar{
     background-color: var(--c3);
     width: 100%;
-    position: sticky;
+    position: relative;
     top: 0px;
 
     display: flex;
