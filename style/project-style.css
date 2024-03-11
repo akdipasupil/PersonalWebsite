@@ -5,12 +5,13 @@
 :root{
     --primary: #000;
     --secondary: #FFF;
+    --tertiary: blue;
 
     color: var(--secondary);
-    font-family:'Pokemon', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 *{
-    color:var(--secondary)
+    color:var(--secondary);
+    font-family:'Pokemon', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 body{
     background-color:var(--primary);
@@ -30,7 +31,7 @@ body{
 .page-num{
     position: fixed;
     bottom: 0px;
-    right: 0px;
+    right: 60px;
     width:60px;
 }
 .page-num p{
@@ -76,3 +77,76 @@ body{
     width: 40px;
     height: 30px;
 }
+.page{
+    margin: 0 100px 0 100px;
+}
+.page .year-range{
+    width:15%;
+}
+.page .project-title{
+    width:20%;
+    font-size: 24px;
+}
+.page .description{
+    width:65%;
+}
+/* Specific Classes */
+
+#sidebar-nav {
+    position: fixed;
+    right: -150px;
+    width: 150px;
+
+    height: 100%;
+    background-color: var(--tertiary);
+    z-index: 10;
+
+    transition: ease-in-out 0.5s;
+}
+
+#sidebar-nav>button {
+    margin-left: 120px;
+    margin-top: 10px;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+
+    background: none;
+    border: none;
+}
+
+#sidebar-nav>button:hover {
+    cursor: pointer;
+}
+
+#sidebar-nav div button {
+    border: 2px solid black;
+    background: none;
+    margin: 10px 0 10px 0;
+}
+
+#sidebar-nav div button:hover {
+    cursor: pointer
+}
+/* 
+IMPORTANT CLASSES 
+overrides stuff from top if its at bottom 
+yk yk yk yk yk yk yk yk yk yk 
+*/
+.hidden{
+    display:none;
+}
+
+#sidebar-nav.sidebar-shown{
+    right:0px;
+}
+/* ANIMATIONS */
+/* 
+@keyframes from-right {
+    from{
+        right:-150px;
+    }
+    to{
+        right: 0px;
+    }
+} */
