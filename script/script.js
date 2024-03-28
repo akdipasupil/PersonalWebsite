@@ -2,10 +2,16 @@ let pageCount = 3;
 let currentPage = 0;
 let pages;
 
+let pageCountEl = document.getElementById('total-pages');
+let pageNumberEl = document.getElementById('current-page');
+console.log(pageCountEl);
+console.log(pageNumberEl);
+
 initializePages();
 
 function initializePages() {
     pages = document.getElementsByClassName('page');
+    pageCountEl.textContent = pageCount;
 }
 
 function nextPage() {
@@ -15,8 +21,10 @@ function nextPage() {
     pages[currentPage].classList.toggle('hidden');
     
     currentPage++;
+
     
     pages[currentPage].classList.toggle('hidden');
+    pageNumberEl.textContent = currentPage +1;
 }
 
 function prevPage() {
@@ -26,8 +34,10 @@ function prevPage() {
     pages[currentPage].classList.toggle('hidden');
     
     currentPage--;
+
     
     pages[currentPage].classList.toggle('hidden');
+    pageNumberEl.textContent = currentPage + 1;
 }
 
 function toggleNav() {

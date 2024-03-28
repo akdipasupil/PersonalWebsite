@@ -5,9 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Webite</title>
     <link rel="stylesheet" href="./style/style.css">
+    <script src="../script/script.js"></script>
 </head>
-    <body style="background-image: url(./icon/svg.jpeg)";;>
-        <div id="navbar">
+
+    <body style="background-image: url(./icon/bacgrkound.jpeg)";;>
+        
+        <div class="" id="sidebar-nav">
+            <button id="sidebar-nav-close" onclick="toggleNav()"><img src="../icon/arrow-left.svg"></button>
+            <div class="flex-column">
+                <a href="./index.html"><button>Welcome</button></a>
+                <a href="./pages/about.html"><button>About Me</button></a>
+                <a href="./pages/projects.html"><button>My Projects</button></a>
+                <a href="./pages/contact.html"><button>Contact Me</button></a>
+            </div>
+        </div>
+        <div class="flex-row" id="navbar">
+            <div class="left-nav-container flex-row">
+                <img src="../jet.png" alt="">
+                <p>jgwentworth@gmail.com | 877-cash-now</p>
+            </div>
+            <div>
+                <button class="burger-button" onclick="toggleNav()"><img src="../icon/hmaburger.svg" alt="burge"></button>
+            </div>
+     </div>
+        <!-- <div id="navbar">
             <div class="icon-container">
                 <img class = "icon" src="jet.png" alt="ya boy keeping it 1000">
             </div>
@@ -22,27 +43,40 @@
                     <button class="buttons">Contact</button>
                 </a>
             </div>
-        </div>
+        </div> -->
         <div id="funnybar">
             <progress></progress>
             <span title="what are you doing click something else buddy">
-                <marquee style="font-size: 50px;" direction="left" scrollamount="20">welcome !!!!! </marquee>
-                <marquee style="font-size: 50px;" direction="right" scrollamount="30">welcome!!!! </marquee>
+                <marquee style="font-size: 50px;" direction="left" scrollamount="30">welcome!!!!welcome!!!!</marquee>
+                <marquee style="font-size: 50px;" behavior="alternate" direction="right" scrollamount="30">welcome!!!! </marquee>
             </span>
             <progress></progress>
 
         </div>
-        <audio controls><source src="./justcantgetenough.mp3" type="audio/mpeg">Your browser does not support the audio tag.</audio>
-       <p class = "content">
+        <marquee behavior="alternate" scrollamount="10" direction="">
+             <marquee behavior="" scrollamount="5" direction="down">
+            <audio controls><source src="./justcantgetenough.mp3" type="audio/mpeg">Your browser does not support the audio tag.</audio>
+        </marquee>
+    </marquee>
+    
         hell yeah!!!!!!!!!!!!!!!!!!!
        </p>
        Select your favorite color:
        <input type="color" id="favcolor" name="favcolor" value="#e66465">
        <marquee style="font-size: 50px;" direction="right" scrollamount="20" width="100%"> <img class = "icon" src="jet.png" alt="ya boy keeping it 1000"> </marquee>
        <marquee style="font-size: 50px;" direction="left" scrollamount="20" width="100%"> <img class = "icon" src="jet.png" alt="ya boy keeping it 1000"> </marquee>
-       <marquee style="font-size: 50px;" direction="down" scrollamount="20" width="100%" height="500px"> help!!!!! </marquee>
+       <marquee style="font-size: 50px;" direction="down" scrollamount="20" width="100%" height="500px"> hello!!!!!!!! <marquee scrollamount="20" direction="right">help meee <marquee behavior="alternate" scrollamount="100" direction="left"><img src="/icon/svg.jpeg" alt=""></marquee></marquee></marquee>
        <marquee style="font-size: 50px;" direction="up" scrollamount="20" width="100%"> <img class = "icon" src="jet.png" alt="ya boy keeping it 1000"> </marquee>
+       <label>Choose a browser from this list:
+        <input list="browsers" name="myBrowser" /></label>
+        <datalist id="browsers">
+          <option value="Chrome">
+          <option value="Firefox">
+          <option value="Internet Explorer">
+          <option value="Opera">
+          <option value="Safari">
+          <option value="Microsoft Edge">
+        </datalist>
     </body>
-    
 </html>
 

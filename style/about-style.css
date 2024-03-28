@@ -1,0 +1,129 @@
+@font-face {
+    font-family: Funky;
+    src: url(./font/pricedown\ bl.otf);
+}
+@font-face {
+    font-family: Poke;
+    src: url(/font/Pokemon\ Classic.ttf);
+}
+*{
+    color:var(--c4);
+    font-family:'Poke', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+:root{
+    font-size: 10px;
+    --c1: SlateBlue;
+    --c2: DarkSlateBlue;
+    --c3: DarkSlateBlue;
+    --c4: White;
+    --tertiary: darkslateBlue;
+}
+body{
+    background-color: var(--c1);
+    margin: 0;
+}
+.icon{
+    height: 40px;
+    margin: 0px 10px 0px 10px;
+    /* top right bottom left */
+}
+#navbar{
+    background-color: var(--c2);
+    width: auto;
+    position: relative;
+    top: 0px;
+    padding: 5px 10px 5px 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.burger-button{
+    background:none;
+    border:0;
+    width: 40px;
+    height: 40px;
+    margin: 0px;
+    padding: 0px;
+}
+#navbar .burger-button img{
+    width: 36px;
+    height: 36px;
+}
+#navbar .burger-button:hover{
+    cursor: pointer
+}
+
+/* #navbar{
+} */
+#navbar .left-nav-container{
+    width:40%;
+    font-size: 12px;
+    color:white
+}
+#navbar .left-nav-container img{
+    height: 40px;
+    margin: 0px 10px 0px 10px;
+}
+.arrow-button{
+    background:none;
+    border:none;
+}
+.arrow-button:hover{
+    cursor: pointer;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+#sidebar-nav {
+    position: fixed;
+    right: -150px;
+    width: 150px;
+
+    height: 100%;
+    background-color: var(--tertiary);
+    z-index: 10;
+
+    transition: ease-in-out 0.5s;
+}
+#sidebar-nav>button {
+    margin-left: 120px;
+    margin-top: 10px;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+
+    background: none;
+    border: none;
+}
+
+#sidebar-nav>button:hover {
+    cursor: pointer;
+}
+
+#sidebar-nav div button {
+    border: 2px solid black;
+    background: none;
+    margin: 10px 0 10px 0;
+}
+
+#sidebar-nav div button:hover {
+    cursor: pointer
+}
+/* 
+IMPORTANT CLASSES 
+overrides stuff from top if its at bottom 
+yk yk yk yk yk yk yk yk yk yk 
+*/
+.hidden{
+    display:none;
+}
+
+#sidebar-nav.sidebar-shown{
+    right:0px;
+}

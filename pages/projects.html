@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>projecting!!</title>
     <link rel="stylesheet" href="../style/project-style.css">
-    <script src="../script/script.js"></script>
+    <script src="../script/script.js" defer></script>
 </head>
 <body>
 
     <div class="" id="sidebar-nav">
         <button id="sidebar-nav-close" onclick="toggleNav()"><img src="../icon/arrow-left.svg"></button>
         <div class="flex-column">
+            <a href="../index.html"><button>Welcome</button></a>
             <a href="./about.html"><button>About Me</button></a>
             <a href="./projects.html"><button>My Projects</button></a>
             <a href="./contact.html"><button>Contact Me</button></a>
@@ -44,7 +45,7 @@
                 <button class="arrow-button"  onclick="prevPage()">
                     <img src="../icon/arrow-left.svg" alt="back">
                 </button>
-                <p>current page</p>
+                <p><span id = "current-page">1</span> / <span id="total-pages">3</span></p>
                 <button class="arrow-button"  onclick="nextPage()">
                     <img src="../icon/arrow-right.svg" alt="forward">
                 </button>
@@ -54,39 +55,24 @@
     <div class="page flex-column" id="page-0">
         <div class="section-1 flex-row">
             <p class="year-range">
-                2022-2024
+                2024
             </p>
             <h3 class="project-title">
-                Title 1
+                Guitar Piano Hero Festival
             </h3>
             <p class="description">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, quo.    
+                For this project, I tried to recreate a game similar to guitar hero. There are five different buttons lined up with each other, and each button plays a different tone, and lights up the corresponding light on the right side. There are also two buttons on the side, the left one plays back the tones in the order that the user played them in. The right button clears the stored tones and allows for the player to begin playing once again.<br> 
             </p> 
+            
         </div>
-        <hr>
-        <div class="section-3 flex-row">
-              <p class="year-range">
-                2022-2024
-            </p>
-            <h3 class="project-title">
-                Title 2
-            </h3>
-            <p class="description">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, quo.    
-            </p>    
-        </div>
-        <hr>
-        <div class="section-3 flex-row">
-            <p class="year-range">
-                2022-2024
-            </p>
-            <h3 class="project-title">
-                Title 3
-            </h3>
-            <p class="description">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, quo.    
-            </p>    
-        </div>
+        <marquee behavior="alternate" direction="left"scrollamount="3" ><img src="../icon/above.jpg" alt="above image" style="height: 250px; transform: rotate(1009deg);;"><img src="../icon/side.jpg" alt="side image" style="height: 250px; transform: rotate(10deg);;"></marquee>
+        <div class="scroll-container">
+            <img src="../icon/1.png" alt="Cinque Terre">
+            <img src="../icon/2.png" alt="Forest">
+            <img src="../icon/3.png" alt="Northern Lights">
+            <img src="../icon/4.png" alt="Mountains">
+          </div>
+    </div>
     </div>
     <div class="page flex-column hidden" id="page-1">
         <div class="section-1 flex-row">
@@ -176,7 +162,7 @@
             
         </div>
     </div>
-    <audio controls><source src="../finalbosstheme.mp3" type="audio/mpeg">Your browser does not support the audio tag.</audio>
+    <audio controls><source src="../justcantgetenough.mp3" type="audio/mpeg">Your browser does not support the audio tag.</audio>
     <div class="page-num">  
         <p>
             Projects
